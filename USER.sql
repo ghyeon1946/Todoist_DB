@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS `Todoist` 
+  DEFAULT CHARACTER SET utf8 
+  DEFAULT COLLATE utf8_general_ci;
+    
+USE 'Todoist';
+
+CREATE TABLE USER(
+    userID VARCHAR(20),
+    userPASSWORD VARCHAR(20),
+    userNAME VARCHAR(20),
+    userEMAIL VARCHAR(50),
+    PRIMARY KEY (userID)
+)ENGINE = InnoDB
+  DEFAULT CHARACTER SET utf8 
+  DEFAULT COLLATE utf8_general_ci;
